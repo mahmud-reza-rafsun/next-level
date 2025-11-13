@@ -66,3 +66,4 @@ const richDeveloper: Developer<SmartWatch, RichBike> = {
 }
 
 console.log({ poorDeveloper }, { richDeveloper });
+
