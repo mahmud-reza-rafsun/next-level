@@ -2,19 +2,19 @@
 
 // type UserRoles = "Admin" | "Editor" | "Viewer";
 
-enum UserRoles {
-    Admin = 'Admin',
-    Editor = 'Editor',
-    Viewer = 'Viewer'
-}
+// enum UserRoles {
+//     Admin = 'Admin',
+//     Editor = 'Editor',
+//     Viewer = 'Viewer'
+// }
 
-const userRoles = {
+const UserRoles = {
     Admin: 'Admin',
     Editor: 'Editor',
     Viewer: 'Viewer'
 } as const;
 
-const canEdit = (role: UserRoles) => {
+const canEdit = (role: keyof typeof UserRoles) => {
     if (role === UserRoles.Admin || role === UserRoles.Editor) {
         return true;
     } else return false;

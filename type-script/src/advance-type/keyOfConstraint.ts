@@ -8,4 +8,4 @@ type RichPeopleVehicle = {
 type MyVehicle1 = "bike" | "car" | "cng";
 type MyVehicle2 = keyof RichPeopleVehicle;
 
-const myVheicleOne: MyVehicle1 = 'bike'
+const myVheicleOne: MyVehicle1 = 'bike' 
