@@ -33,3 +33,46 @@ class Shape {
         return 0;
     }
 }
+
+class Circle {
+    radius: number;
+    constructor(radius: number) {
+        this.radius = radius;
+    }
+    getArea(radius: number) {
+        return Math.PI * this.radius * this.radius
+    }
+}
+
+class Rectangle extends Shape {
+
+    height: number;
+    width: number;
+
+    constructor(height: number, width: number) {
+        super()
+        this.height = height;
+        this.width = width;
+    }
+
+    getArea(): number {
+        return this.height * this.width;
+    }
+}
+
+
+const getArea = (params: Shape) => {
+    console.log(params.getArea());
+}
+
+
+const shape1 = new Shape();
+const shape2 = new Circle(10);
+const shape3 = new Rectangle(12, 20);
+
+// getArea(shape2);
+
+const pie = Math.PI * 10;
+console.log(pie);
+
+// const 
